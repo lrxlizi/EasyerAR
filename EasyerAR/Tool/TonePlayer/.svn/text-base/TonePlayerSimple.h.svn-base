@@ -1,0 +1,36 @@
+//
+//  TonePlayerSimple.h
+//  SportChina
+//
+//  Created by 栗子 on 2017/7/13.
+//  Copyright © 2017年 Beijing Sino Dance Culture Media Co.,Ltd. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface TonePlayerSimple : NSObject
++(TonePlayerSimple *)tonePlayer;
+
+//打卡成功声音
+-(void)successPlay;
+
+//打卡失败声音
+-(void)failurePlay;
+
+//答题错误
+-(void)answerFailurePlay;
+
+-(void)playerUrl:(NSURL *)url;
+-(void)dingPlay;//叮一声
+//暂停播放
+-(void)pausePlay;
+
+@property (nonatomic,copy)NSArray *vedios;
+//播放完成
+@property(nonatomic,assign)BOOL playerComplete;
+@property(nonatomic,strong)NSString *linePlayerComplete;
+
+@property (nonatomic,  copy) voidBlock block;
+//储存广告
+@property(nonatomic,strong)NSArray *adArray;
+@end

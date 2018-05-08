@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  EasyerAR
+//
+//  Created by 栗子 on 2018/5/8.
+//  Copyright © 2018年 http://www.cnblogs.com/Lrx-lizi/.     https://github.com/lrxlizi/. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "NSNotificationClass.h"
+#import "TonePlayerSimple.h"
+
+#import <easyar/engine.oc.h>
+#import <easyar/camera.oc.h>
+#import "Masonry.h"
+
+#import "SDImageCache.h"
+#import "UIButton+WebCache.h"
+#import "SDWebImagePrefetcher.h"
+
+
+
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#endif /* PrefixHeader_pch */
