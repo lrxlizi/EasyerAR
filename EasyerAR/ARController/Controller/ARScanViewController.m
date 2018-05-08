@@ -39,16 +39,19 @@
 
 
 - (void)viewWillAppear:(BOOL)animated{
+    
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:true animated:false];
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
+    
     [super viewWillAppear:animated];
     [glView stop];
 }
 
 - (void)viewWillLayoutSubviews{
+    
     [super viewWillLayoutSubviews];
     [glView resize:self.view.bounds orientation:[[UIApplication sharedApplication] statusBarOrientation]];
 }
