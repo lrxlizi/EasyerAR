@@ -39,25 +39,12 @@
 - (void)btnClicekd{
     ARScanViewController *ar = [ARScanViewController new];
     ar.arArray = [self arImage:self.imageArr];
-    ar.success = ^{
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-             [self showPop];
-        });
-       
-    };
     [self.navigationController pushViewController:ar animated:NO];
     
 }
 
--(void)showPop{
-    
-    PopView *pop = [[PopView alloc]initWithFrame:CGRectMake((SCREEN_WIDTH-300)/2, (SCREEN_HEIGHT-300)/2, 300, 300)];
-    [self.view addSubview:pop];
-    [pop show:YES];
-   
-}
 
-#pragma mark - 网络图片路径改为本地路径
+#pragma mark - 网络图片路径改为本地路径(若是本地图片直接用就行了)
 
 -(NSArray *)arImage:(NSArray *)resourceImgArr{
 
