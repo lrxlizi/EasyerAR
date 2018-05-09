@@ -29,17 +29,23 @@
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(btnClicekd) forControlEvents:UIControlEventTouchUpInside];
     
-    self.imageArr =  @[ @"http://f.qncdn.orunapp.com/image/2018/0508/20180508030730449_184.jpeg",
+    self.imageArr =  @[ @"http://f.qncdn.orunapp.com/image/                                  2018/0508/20180508030730449_184.jpeg",
        @"http://f.qncdn.orunapp.com/image/2018/0424/20180424034610601_822.png",
-                     @"http://f.qncdn.orunapp.com/image/2018/0427/20180427031112614_793.png"];
+       @"http://f.qncdn.orunapp.com/image/2018/0427/20180427031112614_793.png"];
     
     
 }
 
 - (void)btnClicekd{
+    
     ARScanViewController *ar = [ARScanViewController new];
-    ar.arArray = [self arImage:self.imageArr];
-    [self.navigationController pushViewController:ar animated:NO];
+    if ([self arImage:self.imageArr].count) {
+         ar.arArray = [self arImage:self.imageArr];
+         [self.navigationController pushViewController:ar animated:NO];
+    }else{
+        NSLog(@"资源加载失败");//图片还未下载到本地
+        [ToolClass addTipsWithErrorMessage:@"图片还未完成下载稍后再试" andTarget:self.navigationController];
+    }
     
 }
 

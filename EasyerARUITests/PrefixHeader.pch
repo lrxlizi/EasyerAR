@@ -12,6 +12,7 @@
 
 #import "NSNotificationClass.h"
 #import "TonePlayerSimple.h"
+#import "ToolClass.h"
 
 #import <easyar/engine.oc.h>
 #import <easyar/camera.oc.h>
@@ -20,7 +21,7 @@
 #import "SDImageCache.h"
 #import "UIButton+WebCache.h"
 #import "SDWebImagePrefetcher.h"
-
+#import <UIKit/UIKit.h>
 
 
 

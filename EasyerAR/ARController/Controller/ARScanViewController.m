@@ -47,6 +47,7 @@
 - (void)viewWillDisappear:(BOOL)animated{
     
     [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:false animated:false];
     [glView stop];
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A8D652420A29684008909C7 /* ToolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8D652320A29684008909C7 /* ToolClass.m */; };
 		6AB8816A20A187DE00F1D215 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8816920A187DE00F1D215 /* AppDelegate.m */; };
 		6AB8816D20A187DE00F1D215 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8816C20A187DE00F1D215 /* ViewController.m */; };
 		6AB8817020A187DE00F1D215 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB8816E20A187DE00F1D215 /* Main.storyboard */; };
@@ -77,6 +78,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A8D652220A29684008909C7 /* ToolClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolClass.h; sourceTree = "<group>"; };
+		6A8D652320A29684008909C7 /* ToolClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolClass.m; sourceTree = "<group>"; };
 		6AB8816520A187DE00F1D215 /* EasyerAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyerAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB8816820A187DE00F1D215 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6AB8816920A187DE00F1D215 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -268,6 +271,8 @@
 				6AB8822A20A1932F00F1D215 /* TonePlayer */,
 				6AB8819520A18AB400F1D215 /* Library */,
 				6AB8818D20A1889B00F1D215 /* NSNotificationClass */,
+				6A8D652220A29684008909C7 /* ToolClass.h */,
+				6A8D652320A29684008909C7 /* ToolClass.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -569,6 +574,7 @@
 				6AB8825220A1972A00F1D215 /* View+MASAdditions.m in Sources */,
 				6AB8822020A1912100F1D215 /* OpenGLView.m in Sources */,
 				6AB8828820A1992E00F1D215 /* SDWebImageDownloaderOperation.m in Sources */,
+				6A8D652420A29684008909C7 /* ToolClass.m in Sources */,
 				6AB8816D20A187DE00F1D215 /* ViewController.m in Sources */,
 				6AB8828120A1992E00F1D215 /* SDWebImageDownloader.m in Sources */,
 				6AB8825020A1972A00F1D215 /* MASLayoutConstraint.m in Sources */,
